@@ -16,14 +16,16 @@ P_{L_1}(A, V \mid u) \;\propto\; P_{S_1}(u \mid A, V)\,P_{L_1}(A)\,P_{L_1}(V)
 $$
 <br>
 (!need to figure out LaTex embedding)
+
 **Motivation & Goal.**
 RSA is known to yield inaccurate results in scalar implicatures and absolute adjectives. In the case of scalar implicature, it is argued that speakers are insensitive to prior manipulations [cite], but this is not necessarily the case. Taking the example from [cite], if we present subjects with the scenario: Someone threw 10 blocks of marble in the water; John, who witnessed the event, told you that 'some marbles sank.', then RSA supposed predicts that the interpretation is most likely 'all marbles sank'. This is not what RSA predicts. Note that in S1, the KL-divergence this interpretation yields tends to 0. Therefore, the probability of this interpretation at L1 would also tend to zero. In other words, if our world model prior predicts that 100% of chance all marbles would sink, then an interpretation that exactly matches this prior would yield no reduction of entropy whatsoever, as there is no room for reduction in the first place.
+
 **Feedback implementation.**
 [...]
-<br>
+
 **Work package 1 — Replicate RSA results with feedback mechanism.**
 [...]
-<br>
+
 **Methodological details (shared across WP1–2).**
 
 * **Generative assumptions.** QUD-relative utility; cost ~ utterance length; ALT sets tailored to each domain (e.g., `{cup, bowl, ∅}`). Priors over degrees/features set from published norms or simple Gaussians/Beta distributions; uniform priors on free semantic variables unless data suggest otherwise.
@@ -31,9 +33,11 @@ RSA is known to yield inaccurate results in scalar implicatures and absolute adj
 * **Evaluation.** [...] <br>
 
 **Expected contributions.**
-[...] <br>
+[...] 
+
 **Feasibility & plan.**
-[...] <br>
+[...] 
+
 **Risks & mitigations.**
 
 * *Discrete utterances in PC:* use a categorical/softmax node (or Gumbel-softmax for gradients).
