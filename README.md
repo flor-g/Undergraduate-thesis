@@ -1,9 +1,6 @@
 ## Preliminary Project Description*
 
-**Motivation & Goal.**
-[...]
-
-**Core idea.**
+**RSA**
 Lassiter & Goodman's "Adjectival vagueness in a Bayesian model of interpretation" (2015) proposes a formal model of how the free threshold in adjectives are determined in-context, which they named the Rational Speech Act (RSA). This model adopts a three-step recursive bayesian inference approach: the pragmatic listener L1 infers world state (A) from the utterance (u) of the speaker S1, who infers the utterance from a supposed literal listener(L0)'s world state, who infers the world state given the literal meaning of u is true. The function performed by each agent is as follows: <br>
 $$
 P_{L_0}(A \mid u, V) \;=\; P_{L_0}\!\big(A \mid \llbracket u \rrbracket_V = 1\big)
@@ -19,6 +16,8 @@ P_{L_1}(A, V \mid u) \;\propto\; P_{S_1}(u \mid A, V)\,P_{L_1}(A)\,P_{L_1}(V)
 $$
 <br>
 (!need to figure out LaTex embedding)
+**Motivation & Goal.**
+RSA is known to yield inaccurate results in scalar implicatures and absolute adjectives. In the case of scalar implicature, it is argued that speakers are insensitive to prior manipulations [cite], but this is not necessarily the case. Taking the example from [cite], if we present subjects with the scenario: Someone threw 10 blocks of marble in the water; John, who witnessed the event, told you that 'some marbles sank.', then RSA supposed predicts that the interpretation is most likely 'all marbles sank'. This is not what RSA predicts. Note that in S1, the KL-divergence this interpretation yields tends to 0. Therefore, the probability of this interpretation at L1 would also tend to zero. In other words, if our world model prior predicts that 100% of chance all marbles would sink, then an interpretation that exactly matches this prior would yield no reduction of entropy whatsoever, as there is no room for reduction in the first place.
 **Feedback implementation.**
 [...]
 <br>
