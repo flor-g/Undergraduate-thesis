@@ -21,20 +21,20 @@ $$
 (!need to figure out LaTex embedding)
 **Feedback implementation.**
 [...]
-
+<br>
 **Work package 1 — Replicate RSA results with feedback mechanism.**
 [...]
-
+<br>
 **Methodological details (shared across WP1–2).**
 
 * **Generative assumptions.** QUD-relative utility; cost ~ utterance length; ALT sets tailored to each domain (e.g., `{cup, bowl, ∅}`). Priors over degrees/features set from published norms or simple Gaussians/Beta distributions; uniform priors on free semantic variables unless data suggest otherwise.
 * **Recognition dynamics.** PC message passing with precision scheduling; softmax likelihood for discrete `u`. Convergence diagnostics (free-energy decrease), and ablations varying `α`, costs, and ALT to test robustness and identifiability.
-* **Evaluation.** [...]
+* **Evaluation.** [...] <br>
 
 **Expected contributions.**
-[...]
+[...] <br>
 **Feasibility & plan.**
-[...]
+[...] <br>
 **Risks & mitigations.**
 
 * *Discrete utterances in PC:* use a categorical/softmax node (or Gumbel-softmax for gradients).
