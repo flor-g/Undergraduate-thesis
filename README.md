@@ -1,4 +1,4 @@
-## Preliminary Project Description: *Predictive Coding as an Algorithmic Implementation of RSA for Vagueness, with an Extension to Nouns*
+## Preliminary Project Description*
 
 **Motivation & Goal.**
 [...]
