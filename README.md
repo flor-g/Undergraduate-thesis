@@ -18,10 +18,15 @@ $$
 (!need to figure out LaTex embedding)
 
 **Motivation & Goal.**
-RSA is known to yield inaccurate results in scalar implicatures and absolute adjectives. In the case of scalar implicature, it is argued that listeners are insensitive to prior manipulations [cite], but this is not necessarily the case. Taking the example from [cite], if we present subjects with the scenario: Someone threw 10 blocks of marble in the water; John, who witnessed the event, told you that 'some marbles sank.', then RSA supposedly predicts that the interpretation is most likely 'all marbles sank'. This is not what RSA predicts. Note that in S1, the KL-divergence this interpretation yields tends to 0. Therefore, the probability of this interpretation at L1 would also tend to zero. In other words, if our world-state prior predicts that 100% of chance all marbles would sink, then an interpretation that exactly matches this prior would yield no reduction of entropy whatsoever, as there is no room for reduction in the first place. RSA did not address the question of what do listeners do when the only interpretation that follows from a highly concentrated world-state prior yields no informativity at all.   
 
+RSA is known to yield inaccurate results in scalar implicatures and absolute adjectives. In the case of scalar implicature, it is argued that listeners are insensitive to prior manipulations [cite], but this is not necessarily the case. Taking the example from [cite], if we present subjects with the scenario: Someone threw 10 blocks of marble in the water; John, who witnessed the event, told you that 'some marbles sank.', then RSA supposedly predicts that the interpretation is most likely 'all marbles sank'. This is not what RSA predicts. Note that in S1, the KL-divergence this interpretation yields tends to 0. Therefore, the probability of this interpretation at L1 would also tend to zero. In other words, if our world-state prior predicts that 100% of chance all marbles would sink, then an interpretation that exactly matches this prior would yield no reduction of entropy whatsoever, as there is no room for reduction in the first place. RSA did not address the question of what do listeners do when the only interpretation that follows from a highly concentrated world-state prior yields no informativity (and how do we determine the threshold of 'no informativity').   
+ 
 **Feedback implementation.**
-[...]
+
+Any computational model would need to satisfy the following constraints to be considered biologically plausible:<br>
+1. Local computation: A neuron performs computations only on the basis of the activity of its input neurons and synaptic weights associated with these inputs (rather than information encoded in other parts of the circuit). <br>
+2. Local plasticity: Synaptic plasticity is only based on the activity of pre-synaptic and post-synaptic neurons.<br>
+[cite]
 
 **Work package 1 — Replicate RSA results with feedback mechanism.**
 [...]
