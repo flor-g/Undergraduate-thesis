@@ -19,8 +19,17 @@ $$
 
 **Motivation & Goal.**
 
-RSA is known to yield inaccurate results in scalar implicatures and absolute adjectives. In the case of scalar implicature, it is argued that listeners are insensitive to prior manipulations [cite], but this is not necessarily the case. Taking the example from [cite], if we present subjects with the scenario: Someone threw 10 blocks of marble in the water; John, who witnessed the event, told you that 'some marbles sank.', then RSA supposedly predicts that the interpretation is most likely 'all marbles sank'. This is not what RSA predicts. Note that in S1, the KL-divergence this interpretation yields tends to 0. Therefore, the probability of this interpretation at L1 would also tend to zero. In other words, if our world-state prior predicts that 100% of chance all marbles would sink, then an interpretation that exactly matches this prior would yield no reduction of entropy whatsoever, as there is no room for reduction in the first place. RSA did not address the question of what do listeners do when the only interpretation that follows from a highly concentrated world-state prior yields no informativity (and how do we determine the threshold of 'no informativity').   
- 
+RSA is known to yield inaccurate results in scalar implicatures and absolute adjectives [cite]. In the case of scalar implicature, it is argued that listeners are insensitive to prior manipulations [cite], but this is not necessarily the case. Taking the example from [cite], if we present subjects with the scenario: Someone threw 10 blocks of marble in the water; John, who witnessed the event, told you that 'some marbles sank', then RSA supposedly predicts that the interpretation is most likely that all marbles sank. This is not what the RSA predicts. Note that in S1, the KL-divergence this interpretation yields tends to 0. Therefore, the probability of this interpretation at L1 would also tend to zero. In other words, if our world-state prior predicts that 100% of chance all marbles would sink, then an interpretation that exactly matches this prior would yield no reduction of entropy whatsoever, as there is no room for reduction in the first place. RSA did not address what listeners infer in this scenario. A variant of RSA, the wonky world model [cite], introduce a lifted variable w that switches the world-state prior distribution between skewed(reflects what the listener expects in a regular world) and flat(reflects a wonky world where all states are equally possible): <br>
+[equations to be inserted]
+<br>
+[...]
+<br>
+Interestingly, [cite] has shown that inference on absolute adjectives are sensitive to world-state prior. [...] 
+<br>
+Recent studies also shows top-down speaker-model adaptions [cite].[...]
+<br>
+Given these,[...]
+
 **Feedback implementation.**
 
 Any computational model would need to satisfy the following constraints to be considered biologically plausible:<br>
@@ -28,17 +37,17 @@ Any computational model would need to satisfy the following constraints to be co
 2. Local plasticity: Synaptic plasticity is only based on the activity of pre-synaptic and post-synaptic neurons.<br>
 [cite]
 
-**Work package 1 — Replicate RSA results with feedback mechanism.**
+**1 — Replicate RSA results with feedback mechanism in relative adjectives**
 [...]
 
-**Methodological details (shared across WP1–2).**
+**2 — absolute adjectives**
+
+**Methodological details**
 
 * **Generative assumptions.** QUD-relative utility; cost ~ utterance length; ALT sets tailored to each domain (e.g., `{cup, bowl, ∅}`). Priors over degrees/features set from published norms or simple Gaussians/Beta distributions; uniform priors on free semantic variables unless data suggest otherwise.
 * **Recognition dynamics.** PC message passing with precision scheduling; softmax likelihood for discrete `u`. Convergence diagnostics (free-energy decrease), and ablations varying `α`, costs, and ALT to test robustness and identifiability.
 * **Evaluation.** [...] <br>
 
-**Expected contributions.**
-[...] 
 
 **Feasibility & plan.**
 [...] 
@@ -47,6 +56,5 @@ Any computational model would need to satisfy the following constraints to be co
 
 * *Discrete utterances in PC:* use a categorical/softmax node (or Gumbel-softmax for gradients).
 * *Identifiability of `θ` vs prior scale:* anchor priors from norms; report sensitivity; include ALT/cost ablations.
-* *Noun model complexity:* start with scalar/thresholded nouns; prototype/region as stretch target.
 
 [1]:https://cocolab.stanford.edu/papers/LassiterGoodman2015-Synthese.pdf
