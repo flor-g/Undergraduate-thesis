@@ -40,11 +40,11 @@ Any computational model would need to satisfy the following constraints to be co
 **1 — Replicate RSA results with feedback mechanism in relative adjectives**
 [...]
 
-**2 — absolute adjectives**
+**2 — **
 
 **Methodological details**
 
-* **Generative assumptions.** QUD-relative utility; cost ~ utterance length; ALT sets tailored to each domain (e.g., `{cup, bowl, ∅}`). Priors over degrees/features set from published norms or simple Gaussians/Beta distributions; uniform priors on free semantic variables unless data suggest otherwise.
+* **Generative assumptions.** [...]
 * **Recognition dynamics.** PC message passing with precision scheduling; softmax likelihood for discrete `u`. Convergence diagnostics (free-energy decrease), and ablations varying `α`, costs, and ALT to test robustness and identifiability.
 * **Evaluation.** We know that ERP data tyipically reflect non-phase-locked processes and neural oscillation relflect phase-locked processes. With this in mind, [...] <br>
 
